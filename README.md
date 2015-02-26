@@ -1,4 +1,4 @@
-
+### This is still a work in progress. Trying to get a basic version out there for people to start trying out different data sets.
 
 # To customize data
 * Modify the variables at the top of the js/chart-progression.js to match your data
