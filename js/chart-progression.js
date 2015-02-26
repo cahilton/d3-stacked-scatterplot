@@ -7,7 +7,7 @@
 var timeIncrements = 1;
 var showSubjectId = true;
 var chartLabel = "Hospital Acquired Infections";
-var chartFor = "Overall Standardized Infection Ration";
+var chartFor = "Overall Standardized Infection Ratio";
 var maxLongTransition = 3000;
 var maxShortTransition = 900;
 var subjectLabel = "Hospital"; // here you could put patient, state, whatever is in column 3
