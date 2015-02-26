@@ -1,0 +1,19 @@
+{
+  "name": "tumor-progression-viz",
+  "version": "0.1.0",
+  "main": "chart_progression.html",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "d3": "~3.5.5"
+  }
+}
