@@ -350,7 +350,7 @@ function initChart() {
             // dynamically add structured data attributes
             $.each(staticTypes, function() {
                 var sType = this;
-                var inverseLookup = structDictionary[sType].structInverse
+                var inverseLookup = structDictionary[sType].structInverse;
                 $.each(inverseLookup, function () {
                     var sVal = this;
                     var sAttr = (sType.split(" ").join("_")).toLowerCase();
@@ -367,7 +367,7 @@ function initChart() {
 
 
             return self;
-        }
+        };
 
         this.showClickLine = function(subj) {
             var line = d3.svg.line()
@@ -387,7 +387,7 @@ function initChart() {
                 .attr("class", "line click-line")
                 .attr("d", line)
                 .attr("stroke", this.color);
-        }
+        };
 
         this.updateChart = function(min, max) {
             var newData = filterData(min, max, this.data);
@@ -395,7 +395,7 @@ function initChart() {
 
             self.renderChart(self.label, newData, self.showBottonLegend, +min, +max, self.maxYAxisVal, self.color, false);
             return self;
-        }
+        };
 
         function filterData(min, max, data) {
             var newData = [];
@@ -431,7 +431,7 @@ function initChart() {
     });
 
     $('.scale-box').keypress(function (e) {
-        if (e.which == 13) {
+        if (e.which === 13) {
             $("#reset-scale").trigger("click");
         }
 
